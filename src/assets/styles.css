@@ -47,3 +47,69 @@
     color: #ccc;
 }
 
+/*contenedor principal*/
+
+#ContenedorPrincipal
+{
+    width: 80%;
+    height: 680px;
+    overflow: scroll;
+    border: 1px solid black;
+    margin: 0px auto;
+    
+    background-color: rgb(66, 186, 223);
+   
+
+}
+
+#CajaPais
+{
+    width: 500px;
+    height: 220px;
+    background-color: white;
+    margin: 27px;
+    list-style: none;
+    text-align: center;
+    border-radius: 30px;
+    float: left;
+    
+}
+
+#ContenedorPrincipal  a
+{
+    text-decoration: none;
+    font-style: oblique;
+    color: black;
+    line-height: 70px;
+    
+}
+
+#cajaenlace
+{
+    width: 100%;
+    height: 100%;
+    
+}
+
+#cajaenlace h2
+{
+    
+    font-size: 30px;
+}
+
+#cajaenlace p
+{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+#imagenP
+{
+    background:url('./img/img1.jpg');
+}
+
+#cajaenlace:hover 
+{
+    box-shadow: 0px 0px 20px black;
+}
