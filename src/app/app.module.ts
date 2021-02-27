@@ -6,12 +6,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { PaisesComponent } from './Componentes/paises/paises.component';
 import { InicioComponent } from './Componentes/inicio/inicio.component';
+import { BusquedaPipe } from './Pipes/busqueda.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     PaisesComponent,
-    InicioComponent
+    InicioComponent,
+    BusquedaPipe
   ],
   imports: [
     BrowserModule,
