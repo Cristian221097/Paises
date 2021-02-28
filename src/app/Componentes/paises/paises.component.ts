@@ -14,6 +14,8 @@ export class PaisesComponent implements OnInit {
     private _PaisesServicio:PaisesServicio
   ) { }
 
+  BuscarPais="";
+
   ngOnInit(){
     this.getPaises();
   }

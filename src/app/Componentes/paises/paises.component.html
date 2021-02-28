@@ -1,7 +1,7 @@
 
 <div id="buscador">
-    <input type="text"  placeholder="Buscar Pais"/>
-    <input type="button" value="Buscar" />
+    <input type="text"  placeholder="Buscar Pais" name="BuscarPais" [(ngModel)]="BuscarPais"/>
+    
 </div>
 
 
@@ -11,7 +11,7 @@
 
     
         <ul>
-            <li id="CajaPais" *ngFor="let pais of Paises"> 
+            <li id="CajaPais" *ngFor="let pais of Paises | busqueda:BuscarPais"> 
                 <a href="#">
                <div id="cajaenlace">
     

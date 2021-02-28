@@ -169,7 +169,7 @@
 #buscador input[type="text"]
 {
    
-    width: 70%;
+    width: 80%;
     height: 34px;
     margin-top: 30px;
     font-size: 17px;
@@ -177,23 +177,4 @@
     font-family: arial;
 }
 
-#buscador input[type="button"]
-{
-    width: 100px;
-    height: 40px;
-    margin-left: 5px;
-    background-color: rgb(68, 176, 183);
-    color: white;
-    border: 1px solid white;
-    border-radius: 7px;
-    cursor: pointer;
-    transition: all 300ms;
-
-}
-
-
-#buscador input[type="button"]:hover
-{
-    background-color: rgb(10, 217, 230);
-}
  
