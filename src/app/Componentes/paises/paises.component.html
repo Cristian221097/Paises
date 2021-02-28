@@ -12,7 +12,7 @@
     
         <ul>
             <li id="CajaPais" *ngFor="let pais of Paises | busqueda:BuscarPais"> 
-                <a href="#">
+                <a [routerLink]="['/Pais', pais.name]">
                <div id="cajaenlace">
     
                     <h2>{{pais.name}}</h2>

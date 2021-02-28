@@ -20,5 +20,11 @@ export class PaisesServicio{
 
     }
 
+    getPais(nombre_pais:any):Observable<any>{
+        
+        return this.http.get("https://restcountries.eu/rest/v2/name/"+nombre_pais+"?fullText=true");
+
+    }
+
 
 }

@@ -8,13 +8,15 @@ import { AppComponent } from './app.component';
 import { PaisesComponent } from './Componentes/paises/paises.component';
 import { InicioComponent } from './Componentes/inicio/inicio.component';
 import { BusquedaPipe } from './Pipes/busqueda.pipe';
+import { PaisComponent } from './Componentes/pais/pais.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     PaisesComponent,
     InicioComponent,
-    BusquedaPipe
+    BusquedaPipe,
+    PaisComponent
   ],
   imports: [
     BrowserModule,
