@@ -36,8 +36,9 @@ export class PaisComponent implements OnInit {
     this._PaisesServicio.getPais(nombre_pais).subscribe(
       data =>{
 
-        this.pais = data;
-        console.log(data.name)
+        this.pais = data[0];
+
+        
       },
       err=>
       {

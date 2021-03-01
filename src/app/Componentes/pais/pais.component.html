@@ -1,1 +1,21 @@
-<h1>{{pais.name}}</h1>
+<div *ngIf="pais">
+
+    <h1>{{pais.name}}</h1>
+
+</div>
+
+<div id="menuInformaciones">
+    <ul>
+            
+            <a [routerLink]="['Informacion']" ><li>Informacion</li></a>
+            <a [routerLink]="['Fronteras']" ><li>Fronteras</li></a>
+            <a [routerLink]="['Lenguajes']" ><li>Lenguajes</li></a>
+            <a [routerLink]="['Monedas']" ><li>Monedas</li></a>
+            <a [routerLink]="['Traducciones']" ><li>Traducciones</li></a>
+    </ul>
+</div>
+
+
+<router-outlet></router-outlet>
+
+

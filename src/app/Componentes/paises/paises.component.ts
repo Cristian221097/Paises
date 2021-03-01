@@ -24,8 +24,9 @@ export class PaisesComponent implements OnInit {
     this._PaisesServicio.getPaises().subscribe(data=>
       {
 
-        console.log(data);
+        
         this.Paises =data;
+        
 
 
       },
