@@ -10,6 +10,11 @@ import {Router,ActivatedRoute,Params, ParamMap} from '@angular/router';
 })
 export class PaisComponent implements OnInit {
   public pais:any;
+  public mostrarI:boolean;
+  public mostrarF:boolean;
+  public mostrarL:boolean;
+  public mostrarM:boolean;
+  public mostrarT:boolean;
 
   constructor(
     private _PaisesServicio:PaisesServicio,
@@ -17,6 +22,11 @@ export class PaisComponent implements OnInit {
     private _route:ActivatedRoute
    
   ) { 
+    this.mostrarI = true;
+    this.mostrarF = false;
+    this.mostrarL = false;
+    this.mostrarM = false;
+    this.mostrarT = false ;
 
   }
 
@@ -37,6 +47,7 @@ export class PaisComponent implements OnInit {
       data =>{
 
         this.pais = data[0];
+        
 
         
       },
@@ -45,6 +56,47 @@ export class PaisComponent implements OnInit {
         console.log(<any>err);
       }
       );
+  }
+
+  mostrarInformacion(){
+    this.mostrarI = true;
+    this.mostrarF = false;
+    this.mostrarL = false;
+    this.mostrarM = false;
+    this.mostrarT = false;
+  }
+
+  mostrarFrontera(){
+    this.mostrarF = true;
+    this.mostrarI = false;
+    this.mostrarL = false;
+    this.mostrarM = false;
+    this.mostrarT = false;
+  }
+
+  mostrarLenguaje(){
+    this.mostrarL = true;
+    this.mostrarF = false;
+    this.mostrarI = false;
+    this.mostrarM = false;
+    this.mostrarT = false;
+  }
+
+  mostrarMoneda(){
+    this.mostrarM = true;
+    this.mostrarI = false;
+    this.mostrarF = false;
+    this.mostrarL = false;
+    this.mostrarT = false;
+  }
+
+  mostrarTraduccion(){
+    this.mostrarT = true;
+    this.mostrarM = false;
+    this.mostrarI = false;
+    this.mostrarF = false;
+    this.mostrarL = false;
+
   }
 
 

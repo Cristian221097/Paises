@@ -3,15 +3,26 @@
 <div id="menuInformaciones">
     <ul>
             
-            <a [routerLink]="['Informacion']" ><li>Informacion</li></a>
-            <a [routerLink]="['Fronteras']" ><li>Fronteras</li></a>
-            <a [routerLink]="['Lenguajes']" ><li>Lenguajes</li></a>
-            <a [routerLink]="['Monedas']" ><li>Monedas</li></a>
-            <a [routerLink]="['Traducciones']" ><li>Traducciones</li></a>
+            <a [routerLink]="['Informacion']"><li (click)="mostrarInformacion()">Informacion</li></a>
+            <a [routerLink]="['Fronteras']" ><li (click)="mostrarFrontera()">Fronteras</li></a>
+            <a [routerLink]="['Lenguajes']" ><li (click)="mostrarLenguaje()">Lenguajes</li></a>
+            <a [routerLink]="['Monedas']" ><li (click)="mostrarMoneda()">Monedas</li></a>
+            <a [routerLink]="['Traducciones']" ><li (click)="mostrarTraduccion()">Traducciones</li></a>
     </ul>
 </div>
 
 
-<router-outlet></router-outlet>
+
+
+
+
+<app-informacion [informacion]="pais" *ngIf="mostrarI"></app-informacion>
+<app-fronteras  [informacion]="pais"  *ngIf="mostrarF" ></app-fronteras>
+<app-leguanjes  [informacion]="pais" *ngIf="mostrarL"></app-leguanjes>
+<app-monedas [informacion]="pais" *ngIf="mostrarM"></app-monedas>
+<app-traducciones [informacion]="pais" *ngIf="mostrarT"></app-traducciones>
+
+
+
 
 
