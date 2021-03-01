@@ -16,6 +16,7 @@ const routes: Routes = [
   {path:'Inicio',component:InicioComponent},
   {path:'Pais/:nombre',component:PaisComponent,children:[
 
+    {path:'',component:InformacionComponent},
     {path:'Informacion',component:InformacionComponent},
     {path:'Fronteras',component:FronterasComponent},
     {path:'Lenguajes',component:LeguanjesComponent},
