@@ -47,6 +47,7 @@ export class PaisComponent implements OnInit {
       data =>{
 
         this.pais = data[0];
+        console.log(this.pais);
         
 
         

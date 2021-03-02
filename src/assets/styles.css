@@ -182,7 +182,7 @@
 #menuInformaciones
 {
     float: left;
-    width: 20%;
+    width: 18%;
     height:661px;
     background-color: black;
 }
@@ -235,19 +235,78 @@
 .ContenidoInformacion
 {
     float: right;
-    width: 80%;
+    width: 82%;
     background-color: tomato;
     height: 661px;
-    background: url('./img/img1.jpg');
+    background-image: url('./img/img1.jpg');
 }
 
 
 .contenedorInformacionPais
 {
-        width: 65%;
-        height: 630px;
+        width: 83%;
+        height: 646px;
         background-color: white;
         margin: 0px auto;
-        margin-top: 17px;
-        border-radius: 85px;
+        margin-top: 8px;
+        border-radius: 40px;
+}
+
+/*bandera*/
+#cajaBandera
+{
+    width: 30%;
+    margin: 0px auto;
+    height: 170px;
+    border: 2px solid black;
+}
+
+#cajaBandera img
+{
+    width: 100%;
+    height: 100%;
+}
+
+.cajaDatos
+{
+    margin: 0px auto;
+    width: 90%;
+    background-color: transparent;
+    height: 415px;
+    margin-top: 5px;
+}
+
+.cajaDatos h1
+{
+    text-align: center;
+    font-style: italic;
+    font-size:  35px;
+}
+
+.cajaDatos p
+{
+    font-size: 24px;
+    margin: 5px;
+    text-align: center;
+
+}
+
+.izquierda
+{
+    float: left;
+    margin-left: 190px;
+}
+
+.derecha
+{
+    margin: 0px auto;
+    width: 176px;
+    margin-left: 560px;
+}
+
+
+.resaltar
+{
+    font-weight: bold;
+    text-align: justify;
 }

@@ -1,6 +1,52 @@
-<div class="ContenidoInformacion" *ngIf="informacion">
+<div class="ContenidoInformacion" *ngIf="informacion"  >
     <div class="contenedorInformacionPais">
-        <h1>{{informacion.capital}}</h1>
+        
+        <div id="cajaBandera">
+            <img id="bandera" src="{{informacion.flag}}" />
+        </div>
+
+    <div class="cajaDatos">
+        <h1>{{informacion.name}}</h1>
+
+        <div class="izquierda">
+            <p class="resaltar">Capital:</p>                          
+            <p class="resaltar">population:</p>                      
+            <p class="resaltar">area:</p>                           
+            <p class="resaltar">alpha2Code:</p>                      
+            <p class="resaltar">alpha3Code:</p>                     
+            <p class="resaltar">region:</p>                       
+            <p class="resaltar">subregion:</p>                        
+            <p class="resaltar">demonym:</p>                       
+            <p class="resaltar">gini:</p>                          
+            <p class="resaltar">nativeName:</p>                        
+            <p class="resaltar">numericCode:</p>                    
+            <p class="resaltar">cioc:</p> 
+
+        </div>
+             
+        
+        <div class="derecha">
+            <p>{{informacion.capital}}</p> 
+            <p>{{informacion.population}}</p> 
+            <p>{{informacion.area}}</p> 
+            <p>{{informacion.alpha2Code}}</p>
+            <p>{{informacion.alpha3Code}}</p> 
+            <p>{{informacion.region}}</p> 
+            <p>{{informacion.subregion}}</p>
+            <p>{{informacion.demonym}}</p> 
+            <p>{{informacion.gini}}</p> 
+            <p>{{informacion.nativeName}}</p>
+            <p>{{informacion.numericCode}}</p> 
+            <p>{{informacion.cioc}}</p> 
+
+
+        </div>
+    
+
+    
+    </div>    
+       
+
     </div>
      
 </div>
