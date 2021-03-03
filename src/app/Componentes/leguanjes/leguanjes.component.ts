@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit,Input } from '@angular/core';
 
 @Component({
   selector: 'app-leguanjes',
@@ -6,6 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./leguanjes.component.css']
 })
 export class LeguanjesComponent implements OnInit {
+
+  @Input() informacion:any;
 
   constructor() { }
 

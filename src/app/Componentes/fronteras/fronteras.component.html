@@ -1,6 +1,23 @@
+<div class="ContenidoInformacion" *ngIf="informacion"  >
+    <div class="contenedorInformacionPais">
+        
+        <div id="cajaBandera">
+            <img id="bandera" src="{{informacion.flag}}" />
+        </div>
 
-<div *ngIf="informacion">
-    <h1>{{informacion.name}}</h1>
+    <div class="cajaDatos">
+        <h1>{{informacion.name}}</h1>
+       
+        <div id="fronteras">
+        <p><span class="resaltar">Fronteras:</span>{{informacion.borders}}</p>    
 
+        </div>
+       
+         
+
+    </div>    
+       
+
+    </div>
+     
 </div>
-

@@ -1,1 +1,45 @@
-<p>leguanjes works!</p>
+<div class="ContenidoInformacion" *ngIf="informacion"  >
+    <div class="contenedorInformacionPais">
+        
+        <div id="cajaBandera">
+            <img id="bandera" src="{{informacion.flag}}" />
+        </div>
+
+    <div class="cajaDatos">
+        <h1>{{informacion.name}}</h1>
+       
+
+        <div class="izquierda">
+            <p class="resaltar">iso639_1:</p>
+            <p class="resaltar">iso639_2:</p>
+            <p class="resaltar">name:</p>
+            <p class="resaltar">nativeName:</p>
+            <p class="resaltar">iso639_1:</p>
+            <p class="resaltar">iso639_2:</p>
+            <p class="resaltar">name:</p>
+            <p class="resaltar">nativeName:</p>
+        </div>
+             
+        
+        <div class="derecha">
+            
+            <ul>
+                <li *ngFor="let lenguaje of informacion.languages">
+                  <p>{{lenguaje.iso639_1}}</p>  
+                  <p>{{lenguaje.iso639_2}}</p>     
+                  <p>{{lenguaje.name}}</p>    
+                  <p>{{lenguaje.nativeName}}</p>    
+                </li>
+            </ul>
+           
+
+        </div>
+    
+
+    
+    </div>    
+       
+
+    </div>
+     
+</div>
