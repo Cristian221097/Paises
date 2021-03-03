@@ -1,1 +1,52 @@
-<p>traducciones works!</p>
+<div class="ContenidoInformacion" *ngIf="informacion"  >
+    <div class="contenedorInformacionPais">
+        
+        <div id="cajaBandera">
+            <img id="bandera" src="{{informacion.flag}}" />
+        </div>
+
+    <div class="cajaDatos">
+        <h1>{{informacion.name}}</h1>
+       
+
+        <div class="izquierda">
+            <p class="resaltar">br</p>
+            <p class="resaltar">de</p>
+            <p class="resaltar">es</p>
+            <p class="resaltar">fa</p>
+            <p class="resaltar">fr</p>
+            <p class="resaltar">hr</p>
+            <p class="resaltar">it</p>
+            <p class="resaltar">ja</p>
+            <p class="resaltar">nl</p>
+            <p class="resaltar">pt</p>
+            
+          
+        </div>
+             
+        
+        <div class="derecha">
+            
+          <p>{{informacion.translations.br}}</p>  
+          <p>{{informacion.translations.de}}</p>  
+          <p>{{informacion.translations.es}}</p>  
+          <p>{{informacion.translations.fa}}</p>  
+          <p>{{informacion.translations.fr}}</p>  
+          <p>{{informacion.translations.hr}}</p>  
+          <p>{{informacion.translations.it}}</p>  
+          <p>{{informacion.translations.ja}}</p>  
+          <p>{{informacion.translations.nl}}</p>   
+          <p>{{informacion.translations.pt}}</p> 
+
+
+        </div>
+    
+
+    
+    </div>    
+       
+
+    </div>
+     
+</div>
+

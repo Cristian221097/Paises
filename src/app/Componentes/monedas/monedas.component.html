@@ -1,1 +1,42 @@
-<p>monedas works!</p>
+<div class="ContenidoInformacion" *ngIf="informacion"  >
+    <div class="contenedorInformacionPais">
+        
+        <div id="cajaBandera">
+            <img id="bandera" src="{{informacion.flag}}" />
+        </div>
+
+    <div class="cajaDatos">
+        <h1>{{informacion.name}}</h1>
+       
+
+        <div class="izquierda">
+            <p class="resaltar">Code:</p>  
+            <p class="resaltar">Name:</p>   
+            <p class="resaltar">Symbol:</p>
+
+        </div>
+             
+        
+        <div class="derecha">
+            
+            <ul>
+                <li *ngFor="let moneda of informacion.currencies">
+                  <p>{{moneda.code}}</p>  
+                  <p>{{moneda.name}}</p>   
+                  <p>{{moneda.symbol}}</p>   
+                  
+                </li>
+            </ul>
+           
+
+
+        </div>
+    
+
+    
+    </div>    
+       
+
+    </div>
+     
+</div>
