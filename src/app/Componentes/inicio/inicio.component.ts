@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+declare var $:any;
 
 @Component({
   selector: 'app-inicio',
@@ -9,7 +10,12 @@ export class InicioComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit(): void {
+  ngOnInit(){
+    $('.bxslider').bxSlider({
+      auto: true,
+      pager: true,
+      slideWidth: 1000
+    });
   }
 
 }
